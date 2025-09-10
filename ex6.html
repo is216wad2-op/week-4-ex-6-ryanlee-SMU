@@ -19,7 +19,13 @@
     <script>
         
         // add code here
-    
+        var select_box = document.getElementById("select_item")
+        select_box.addEventListener("change", function() {
+            var list_item = document.createElement("li")
+            var text = document.createTextNode(select_box.value)
+            list_item.appendChild(text)
+            document.getElementById("shopList").appendChild(list_item)
+        })
     </script>
 
     
